@@ -14,7 +14,9 @@ class Post
 
   def author_name
     if defined(@author)
-
+      @author.name
+    else
+      nil
     end
   end
 end
