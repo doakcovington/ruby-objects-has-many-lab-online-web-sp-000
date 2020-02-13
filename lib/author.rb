@@ -8,6 +8,10 @@ class Author
     @posts = []
   end
 
+  def posts
+    @posts = Post.all.select{|post| post.name == self}
+  end
+
   def add_posts
     @posts << post
     post.author = self
