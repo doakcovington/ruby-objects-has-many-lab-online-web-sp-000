@@ -13,6 +13,8 @@ class Post
   end
 
   def author_name
+    if defined(@author)
 
+    end
   end
 end
