@@ -12,7 +12,7 @@ class Author
     @posts = Post.all.select{|post| post.author == self}
   end
 
-  def add_posts
+  def add_post
     @posts << post
     post.author = self
     @@post_count += 1
